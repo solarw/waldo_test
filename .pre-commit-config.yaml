@@ -1,0 +1,25 @@
+repos:
+-   repo: git@github.com:pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+    -   id: trailing-whitespace
+        language_version: python3.7
+    -   id: end-of-file-fixer
+    -   id: check-docstring-first
+    -   id: check-json
+    -   id: check-added-large-files
+        args: ['--maxkb=5000']
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: requirements-txt-fixer
+    -   id: flake8
+        language_version: python3.7
+-   repo: git@github.com:pre-commit/pre-commit
+    rev: v1.15.1
+    hooks:
+    -   id: validate_manifest
+-   repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: 'v1.4.3'  # Use the sha / tag you want to point at
+    hooks:
+    -   id: autopep8
+        language_version: python3.7

@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pep8 = "*"
+pre-commit = "*"
+
+[packages]
+flask = "*"
+pillow = "*"
+psycopg2-binary = "*"
+flask_sqlalchemy = "*"
+flask_marshmallow = "*"
+marshmallow-sqlalchemy = "*"
+pika = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"
